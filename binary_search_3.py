@@ -4,7 +4,8 @@
 class BinarySearch():
 
     def chop(self, target, array):
-
+        if len(array) == 0:
+            return -1
         i = 0
         k = len(array) - 1
 

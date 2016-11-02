@@ -3,6 +3,8 @@
 class BinarySearch():
 
     def recursive_chop(self, position, target, array):
+        if len(array) == 0:
+            return -1
         if len(array) > 1:
             first_array = array[:len(array)/2] 
             second_array = array[len(array)/2:]
